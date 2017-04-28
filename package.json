@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.8",
+    "css-loader": "^0.28.0",
+    "extglob": "^1.1.0",
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "scripts": {
+    "watch:build": "webpack -w",
+    "watch:server": "browser-sync start --config bs-config.js",
+    "watch": "npm-run-all -p watch:*",
+    "sync": "browser-sync start --config bs-config.js & webpack --watch -d"
+  }
+}
