@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/js/entry.js',
+  entry: './src/js/index.jsx',
   output: {
     path: __dirname + '/public/',
     filename: 'bundle.js'
@@ -16,7 +16,12 @@ module.exports = {
       },
       {
         test: /\.js?$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.jsx$/,
+        exclude: /(node_modules)/,
         loader: 'babel-loader'
       }
     ]

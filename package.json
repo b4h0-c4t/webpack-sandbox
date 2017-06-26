@@ -3,6 +3,7 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "bower": "^1.8.0",
     "browser-sync": "^2.18.8",
     "css-loader": "^0.28.0",
@@ -19,5 +20,15 @@
     "watch:server": "browser-sync start --config bs-config.js",
     "watch": "npm-run-all -p watch:*",
     "sync": "browser-sync start --config bs-config.js & webpack --watch -d"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
   }
 }

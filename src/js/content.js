@@ -1,6 +1,6 @@
 class HelloWorld {
   get() {
-    return "hello, world!";
+    return "hello, webpack!";
   }
 }
 let a = new HelloWorld();
